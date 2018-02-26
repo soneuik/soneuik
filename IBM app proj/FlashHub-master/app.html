@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  	<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+  	  <style type="text/css">
+        body  {
+          font-family: 'Arial Black';
+          background-image: url("images/background.png");
+        }
+  		  .popupContainerDiv {
+	  		     width: 350px;
+  		  }
+        #search{
+            width: 200px;
+            padding: 7px;
+            border: 1px solid #607d8b;
+        }
+        #submitButton{
+            padding: 8px;
+            background: #607d8b;
+            border: 1px solid #607d8b;
+            color: white;
+            margin-left: -5px;
+            cursor: pointer;
+        }
+        #sumbitBuuton:hover{
+            background: #333;
+            transition: all 0.40s;
+        }
+      </style>
+    	<script src="app.js"></script>
+      <script src="canvasjs.min.js"></script>
+  	</head>
+
+  <body class="popupContainerDiv">
+    <header class="w3-container" style="padding-top:22px">
+      <h5>
+          Search:<br>
+          <input type="text" placeholder="Search..." maxlength="20" id="search">
+          <button id="submitButton">Submit</button>
+      </h5>
+    </header>
+
+    <div class="w3-row-padding">
+      <div class="w3-quarter">
+        <p id="results">
+          This extension gives some insight on the human aspect of stock-trading decisions using sentiment and emotion.
+        </p>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+        <div id="sentimentGraph" style="height: 300px; width: 300px; display: none;" > </div>
+        <br \>
+        <div id="emotionGraph" style="height: 300px; width: 300px; display: none;" > </div>
+    </div>
+
+    <img id="newspaperImage" style="display: none;" src="images/paper.png" alt="googleNews" usemap="#googleNews" background-color:"transparent"/>
+    <p class="w3-container" id="newspaperCaption"></p>
+    <map name="googleNews" id="ImageMapsCom-image-maps-2017-11-25-185612">
+      <area title="google news1" id="link1" href="" shape="rect" coords="44,149,117,275" style="outline:none;" target="_blank"/>
+      <area title="google news2" id="link2" href="" shape="rect" coords="128,149,202,210" style="outline:none;" target="_blank"/>
+      <area title="google news3" id="link3" href="" shape="rect" coords="129,220,203,274" style="outline:none;" target="_blank"/>
+      <area title="google news4" id="link4" href="" shape="rect" coords="214,175,286,275" style="outline:none;" target="_blank"/>
+      <area shape="rect" coords="372,371,374,373" alt="Image Map" style="outline:none;" title="Image Map" />
+    </map>
+  </body>
+</html>
